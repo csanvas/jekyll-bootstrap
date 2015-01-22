@@ -1,0 +1,201 @@
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+
+
+//
+// Navbar customization (navbar-cirp class) based on navbar-inverse class
+//
+
+// Added variables. Intial values from navbar-inverse are commented.
+
+//$cor-fondo-xeral: #222;
+$cor-fondo-xeral: #a90533;
+
+//$mscor-fondo-xeral: #ff222222;
+$mscor-fondo-xeral: #ffa90533;
+
+//$cor-fondo-grad: #3c3c3c;
+$cor-fondo-grad: #c31f4d;
+
+//$mscor-fondo-grad: #ff3c3c3c;
+$mscor-fondo-grad: #ffc31f4d;
+
+//$cor-fondo-grad2: #282828;
+$cor-fondo-grad2: #bf0b39;
+
+//$mscor-fondo-grad2: #ff282828;
+$mscor-fondo-grad2: #ffbf0b39;
+
+//$cor-borde: #080808;
+$cor-borde: #080808;
+
+//$cor-texto: #9d9d9d;
+$cor-texto: #f5da9f;
+
+//$cor-activo: #fff;
+$cor-activo: white;
+
+//$cor-fondo-activo: #080808;
+$cor-fondo-activo: #080808;
+
+//$cor-off: #444;
+$cor-off: #444;
+
+//$cor-alterna: #333;
+$cor-alterna: #333;
+
+//$cor-borde-form: #101010;
+$cor-borde-form: #101010;
+
+
+
+//
+// First part taken from bootstrap.css
+//
+.navbar-cirp {
+  background-color: $cor-fondo-xeral;
+  border-color: $cor-borde;
+}
+.navbar-cirp .navbar-brand {
+  color: $cor-texto;
+}
+.navbar-cirp .navbar-brand:hover,
+.navbar-cirp .navbar-brand:focus {
+  color: $cor-activo;
+  background-color: transparent;
+}
+.navbar-cirp .navbar-text {
+  color: $cor-texto;
+}
+.navbar-cirp .navbar-nav > li > a {
+  color: $cor-texto;
+}
+.navbar-cirp .navbar-nav > li > a:hover,
+.navbar-cirp .navbar-nav > li > a:focus {
+  color: $cor-activo;
+  background-color: transparent;
+}
+.navbar-cirp .navbar-nav > .active > a,
+.navbar-cirp .navbar-nav > .active > a:hover,
+.navbar-cirp .navbar-nav > .active > a:focus {
+  color: $cor-activo;
+  background-color: $cor-fondo-activo;
+}
+.navbar-cirp .navbar-nav > .disabled > a,
+.navbar-cirp .navbar-nav > .disabled > a:hover,
+.navbar-cirp .navbar-nav > .disabled > a:focus {
+  color: $cor-off;
+  background-color: transparent;
+}
+.navbar-cirp .navbar-toggle {
+  border-color: $cor-alterna;
+}
+.navbar-cirp .navbar-toggle:hover,
+.navbar-cirp .navbar-toggle:focus {
+  background-color: $cor-alterna;
+}
+.navbar-cirp .navbar-toggle .icon-bar {
+  background-color: $cor-activo;
+}
+.navbar-cirp .navbar-collapse,
+.navbar-cirp .navbar-form {
+  border-color: $cor-borde-form;
+}
+.navbar-cirp .navbar-nav > .open > a,
+.navbar-cirp .navbar-nav > .open > a:hover,
+.navbar-cirp .navbar-nav > .open > a:focus {
+  color: $cor-activo;
+  background-color: $cor-fondo-activo;
+}
+@media (max-width: 767px) {
+  .navbar-cirp .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: $cor-borde;
+  }
+  .navbar-cirp .navbar-nav .open .dropdown-menu .divider {
+    background-color: $cor-fondo-activo;
+  }
+  .navbar-cirp .navbar-nav .open .dropdown-menu > li > a {
+    color: $cor-texto;
+  }
+  .navbar-cirp .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-cirp .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: $cor-activo;
+    background-color: transparent;
+  }
+  .navbar-cirp .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-cirp .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-cirp .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: $cor-activo;
+    background-color: $cor-fondo-activo;
+  }
+  .navbar-cirp .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-cirp .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-cirp .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: $cor-off;
+    background-color: transparent;
+  }
+}
+.navbar-cirp .navbar-link {
+  color: $cor-texto;
+}
+.navbar-cirp .navbar-link:hover {
+  color: $cor-activo;
+}
+.navbar-cirp .btn-link {
+  color: $cor-texto;
+}
+.navbar-cirp .btn-link:hover,
+.navbar-cirp .btn-link:focus {
+  color: $cor-activo;
+}
+.navbar-cirp .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-cirp .btn-link:hover,
+.navbar-cirp .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-cirp .btn-link:focus {
+  color: $cor-off;
+}
+
+
+//
+// Second part taken from bootstrap-theme.css
+//
+.navbar-cirp {
+  background-image: -webkit-linear-gradient(top, $cor-fondo-grad 0%, $cor-fondo-xeral 100%);
+  background-image:      -o-linear-gradient(top, $cor-fondo-grad 0%, $cor-fondo-xeral 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from($cor-fondo-grad), to($cor-fondo-xeral));
+  background-image:         linear-gradient(to bottom, $cor-fondo-grad 0%, $cor-fondo-xeral 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mscor-fondo-grad', endColorstr='$mscor-fondo-xeral', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+}
+.navbar-cirp .navbar-nav > .open > a,
+.navbar-cirp .navbar-nav > .active > a {
+  background-image: -webkit-linear-gradient(top, $cor-fondo-xeral 0%, $cor-fondo-grad2 100%);
+  background-image:      -o-linear-gradient(top, $cor-fondo-xeral 0%, $cor-fondo-grad2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from($cor-fondo-xeral), to($cor-fondo-grad2));
+  background-image:         linear-gradient(to bottom, $cor-fondo-xeral 0%, $cor-fondo-grad2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mscor-fondo-xeral', endColorstr='$mscor-fondo-grad2', GradientType=0);
+  background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
+          box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
+}
+.navbar-cirp .navbar-brand,
+.navbar-cirp .navbar-nav > li > a {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
+//
+// Another styles
+//
+
+// Logo in navbar.
+.navbar-logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  border: 1px solid $cor-borde;
+  border-radius: 4px;
+  background-color: $cor-texto;
+  padding: 1px;
+}

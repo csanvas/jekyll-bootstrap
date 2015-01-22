@@ -10,6 +10,8 @@ highlighter: pygments
 #
 title : CRPIH
 tagline: Centro Ramón Piñeiro para a Investigación en Humanidades
+logo:
+  size32: /imx2/logo_cirp_62x32.png
 author :
   name : Carlos Sánchez
   email : csanchez@cirp.es

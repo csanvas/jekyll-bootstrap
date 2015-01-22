@@ -20,6 +20,7 @@
     
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/cirp.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,9 +45,10 @@
 
   <body>
     <div id="wrap">
-      <nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-cirp" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+          <div class="navbar-logo pull-left"><a href="{{ HOME_PATH }}"><img src="{{ site.logo.size32 | prepend: site.baseurl }}"></a></div>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
